@@ -56,9 +56,11 @@ void AMyActor::Move()
 		{
 			UE_LOG(LogTemp, Log, TEXT("Random Event Occurred at step %d!"), i + 1);
 			bEventOccurred = true;
+			UE_LOG(LogTemp, Log, TEXT("Total Distance: %f"), TotalDistance);
 		}
 		else {
 			UE_LOG(LogTemp, Log, TEXT("No Random Event Occurred at step %d!"), i + 1);
+			UE_LOG(LogTemp, Log, TEXT("Total Distance: %f"), TotalDistance);
 		}
 	}
 }
