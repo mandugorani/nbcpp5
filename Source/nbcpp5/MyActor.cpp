@@ -35,6 +35,8 @@ void AMyActor::BeginPlay()
 	UE_LOG(LogTemp, Log, TEXT("Total Distance: %f"), TotalDistance);
 	UE_LOG(LogTemp, Log, TEXT("Event Occurred: %s"), bEventOccurred ? TEXT("True") : TEXT("False"));
 	UE_LOG(LogTemp, Log, TEXT("HOTRELOAD_TEST"));
+
+	Move();
 }
 
 void AMyActor::Move()
